@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>mealOnWheel-OrderNow</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link href="./order.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <header class="container-fluid main-container">
+        <!--coding for the navigation bar-->
+        <div class="row align-items-center ">
+            <div class="col-lg-3 left-nav text-center">
+                <img src="./assets/logo.jfif" alt="" class="logo">
+            </div>
+            <div class="col-lg-6 center-nav">
+                <div class="row align-items-center justify-content-center">
+                    <a href="../home/food-home.html" class="col-md navigation-items text-center">Home</a>
+                    <a href="../Order Now/order.html" class="col-md navigation-items text-center text-white">Order Now</a>
+                    <a href="../Sign in/signIn.html" class="col-md navigation-items text-center">Sign In</a>
+                    <a href="../contact Us/ContactUs.html" class="col-md navigation-items text-center">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 right-nav ">
+                <form class="d-flex justify-content-center">
+                    <input class="form me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-danger " type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+        <!--Trending items-->
+        <div id="carouselExampleCaptions" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-group">
+                        <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="./assets/cholebhatura.jpg" class="img-fluid rounded-start"
+                                        alt="cholabhatura">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Chola Bhatura</h5>
+                                        <p class="card-text text-white">From street stalls to proper restaurants and
+                                            homes, who among us doesn't care for a few plates of this combination made
+                                            in heaven?</p>
+                                        <p class="card-text"><small class="text-success">TRENDING!!!!</small></p>
+                                        <a href="../Sign in/placeOrder.html"><button type="button" class="btn btn-danger">Add to Cart</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="./assets/samosa.webp" class="img-fluid rounded-start" alt="samosa">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Samosa</h5>
+                                        <p class="card-text text-white">The king of all street foods in India, samosa is
+                                            a must-have every day of the year.</p>
+                                        <p class="card-text"><small class="text-success">TRENDING!!!!</small></p>
+                                        <a href="../Sign in/placeOrder.html"><button type="button" class="btn btn-danger">Add to Cart</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="./assets/dhokla.jpg" class="img-fluid rounded-start" alt="Dhokla">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Dhokla</h5>
+                                        <p class="card-text text-white">Gujaratis have given us this soft and delicious
+                                            snack, and the nation goes gaga over them, and for good reason.</p>
+                                        <p class="card-text"><small class="text-success">TRENDING!!!!</small></p>
+                                        <a href="../Sign in/placeOrder.html"><button type="button" class="btn btn-danger">Add to Cart</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+
+
+                    <div class="card-group">
+                        <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="./assets/Gattesag.webp" class="img-fluid rounded-start" alt="Gatte saag">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Gatte saag</h5>
+                                        <p class="card-text text-white">The besan-based dish from Rajasthan is just too
+                                            yummy for words.</p>
+                                        <p class="card-text"><small class="text-success">TRENDING!!!!</small></p>
+                                        <a href="../Sign in/placeOrder.html"><button type="button" class="btn btn-danger">Add to Cart</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="./assets/Puliyodharai.jpg" class="img-fluid rounded-start"
+                                        alt="Puliyodharai">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Puliyodharai</h5>
+                                        <p class="card-text text-white">This Tamil rice dish is all about the tangy and
+                                            spicy flavours that tamarind has to offer.</p>
+                                        <p class="card-text"><small class="text-success">TRENDING!!!!</small></p>
+                                        <a href="../Sign in/placeOrder.html"><button type="button" class="btn btn-danger">Add to Cart</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="./assets/chickentikka.jpg" class="img-fluid rounded-start"
+                                        alt="Chicken Tikka">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Chicken Tikka</h5>
+                                        <p class="card-text text-white"> Every non-vegetarians favourite, chicken tikkas
+                                            are such a reliable source of joy.</p>
+                                        <p class="card-text"><small class="text-success">TRENDING!!!!</small></p>
+                                        <a href="../Sign in/placeOrder.html"><button type="button" class="btn btn-danger">Add to Cart</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="card-group">
+                        <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="./assets/Rosogolla .jpg" class="img-fluid rounded-start" alt="Rosogolla ">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Rosogolla </h5>
+                                        <p class="card-text text-white">For the longest time, Bengalis and rosogollas
+                                            were synonymous.<br></p>
+                                        <p class="card-text"><small class="text-success">TRENDING!!!!</small></p>
+                                        <a href="../Sign in/placeOrder.html"><button type="button" class="btn btn-danger">Add to Cart</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="./assets/Chicken Chettinad.jpg" class="img-fluid rounded-start"
+                                        alt="Chicken Chettinad">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Chicken Chettinad</h5>
+                                        <p class="card-text text-white">Chettinad spices can make the world a better
+                                            place, especially when cooked with chicken.</p>
+                                        <p class="card-text"><small class="text-success">TRENDING!!!!</small></p>
+                                        <a href="../Sign in/placeOrder.html"><button type="button" class="btn btn-danger">Add to Cart</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-md-4">
+                                    <img src="./assets/Shahi Paneer.jpg" class="img-fluid rounded-start"
+                                        alt="Shahi Paneer">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-white">Shahi Paneer</h5>
+                                        <p class="card-text text-white">A nation full of vegetarians, and we know
+                                            there's only one paneer dish that we all love.</p>
+                                        <p class="card-text"><small class="text-success">TRENDING!!!!</small></p>
+                                        <a href="../Sign in/placeOrder.html"><button type="button" class="btn btn-danger">Add to Cart</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+
+
+        <!--menu of items line-1-->
+        <div class="card-group">
+            <div class="card bg-dark">
+                <img src="./assets/cholebhatura.jpg" class="card-img-top h-50" alt="Chola Bhatura">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Chola Bhatura</h5>
+                    <p class="card-text text-white">From street stalls to proper restaurants and
+                        homes, who among us doesn't care for a few plates of this combination made
+                        in heaven?</p>
+                </div>
+                <div class="card-footer bg-dark">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-dark">
+                <img src="./assets/Shahi Paneer.jpg" class="card-img-top h-50" alt="Shahi Paneer">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Shahi Paneer</h5>
+                    <p class="card-text text-white">A nation full of vegetarians, and we know
+                        there's only one paneer dish that we all love.</p>
+                </div>
+                <div class="card-footer bg-dark">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-dark">
+                <img src="./assets/Chicken Chettinad.jpg" class="card-img-top h-50" alt="Chicken Chettinad">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Chicken Chettinad</h5>
+                    <p class="card-text text-white">Chettinad spices can make the world a better
+                        place, especially when cooked with chicken.</p>
+                </div>
+                <div class="card-footer bg-dark">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+        <!--menu of items line-2-->
+        <div class="card-group">
+            <div class="card bg-dark">
+                <img src="./assets/Kuzhi Paniyaaram.jpg" class="card-img-top h-50" alt="Kuzhi Paniyaaram">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Kuzhi Paniyaaram</h5>
+                    <p class="card-text text-white">The Kuzhi Paniyaaram is one of the few dishes that is prepared
+                        across South India, and is also one of the simplest dishes of South Indian cuisine.</p>
+                </div>
+                <div class="card-footer bg-dark">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-dark">
+                <img src="./assets/Bisi Bele Bhaat.jpg" class="card-img-top h-50" alt="Bisi Bele Bhaat">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Bisi Bele Bhaat</h5>
+                    <p class="card-text text-white">Bisi Bele Bhaat is as unique as it gets. Its preparation is quite
+                        similar to Khichidi, in which rice and dal are cooked together with various vegetables.</p>
+                </div>
+                <div class="card-footer bg-dark">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-dark">
+                <img src="./assets/Hyderabadi Biryani.jpg" class="card-img-top h-50" alt="Hyderabadi Biryani">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Hyderabadi Biryani</h5>
+                    <p class="card-text text-white">No-one does either tradition or food quite like Hyderabad does.
+                        While biryani is popular around India and the world, Hyderabadi Biryani is another thing
+                        altogether.</p>
+                </div>
+                <div class="card-footer bg-dark">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!--menu of items line-3-->
+        <div class="card-group">
+            <div class="card bg-dark">
+                <img src="./assets/Litti Chokha.jpg" class="card-img-top h-50" alt="Litti Chokha">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Litti Chokha</h5>
+                    <p class="card-text text-white ">The simpering smokey litti, mashed potato and brinjal bharta is
+                        another delicacy from North India that will leave you craving for more.</p>
+                </div>
+                <div class="card-footer bg-dark">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-dark">
+                <img src="./assets/Parathe.jpg" class="card-img-top h-50" alt="Parathe">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Parathe</h5>
+                    <p class="card-text text-white">Punjabi breakfast, lunch and dinner is incomplete without the
+                        sumptuous parathas. The thin flat bread is a healthy choice of meal and can be relished with
+                        pickle or curd. </p>
+                </div>
+                <div class="card-footer bg-dark">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-dark">
+                <img src="./assets/Rajma Chawal.jpg" class="card-img-top h-50" alt="Rajma Chawal">
+                <div class="card-body">
+                    <h5 class="card-title text-white">Rajma Chawal</h5>
+                    <p class="card-text text-white">What better than a piping hot plate of Rajma Chawal when you are in
+                        dire need of some comfort food?</p>
+                </div>
+                <div class="card-footer bg-dark">
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupSelect01">Quantity</label>
+                        <select class="form-select" id="inputGroupSelect01">
+                            <option selected>Choose...</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+            <!--final submit button-->
+        <div class="d-grid gap-2 m-4">
+            <a href="../Sign in/placeOrder.html"><button class="btn btn-danger " type="button">ADD SELECTED TO CART</button></a>
+         
+        </div>
+    </header>
+</body>
+
+</html>
