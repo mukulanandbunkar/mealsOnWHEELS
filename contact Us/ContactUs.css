@@ -6,7 +6,7 @@
 
 body{
     overflow-x: hidden;
-    background: url('./asset/bg.jpg');
+    background-color: black;
     background-repeat: no-repeat;
     background-size:cover ;
     background-attachment: fixed;
