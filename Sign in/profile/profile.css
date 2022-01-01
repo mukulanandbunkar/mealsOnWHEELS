@@ -6,7 +6,7 @@
 
 body{
     overflow-x: hidden;
-    background: url('./asset/bg.jpg');
+    background-color: black;
     background-repeat: no-repeat;
     background-size:cover ;
     background-attachment: fixed;
@@ -103,5 +103,104 @@ hr
     color: white;
    background-color: black;
    font-weight: bolder;
+}
+
+.profile{
+    background-color: #d9534f;
+    height: 350px;
+    width: 200px;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    border-radius: 16px;
+    transition: ease 2s;
+}
+
+.profileChange{
+    height: 100px;
+    transition: 2s ease;
+}
+
+.userLogo{
+    width: 100%;
+    text-align: center;
+margin-top: 30px;
+   
+    
+}
+
+.userCreditialsChange, .userLogoChange{
+    display: none;
+}
+
+.hamburgur{
+    
+    height: fit-content;
+    width: 50px;
+    text-align: center;
+    margin: 10px auto;
+    cursor: pointer;
+    
+}
+
+.box{
+    background-color: black;
+    margin: 2px;
+    height: 10px;
+    border-radius: 15px;
+    transition: 1s ease;
+    
+}
+
+
+.box1change{
+    transform:translateY(16px) rotate(-45deg);
+    transition: 2s ease;
+    background-color:black;
+}
+
+.box3change{
+   display: none;
+   
+}
+
+.box2change{
+    transform:translateY(4px) rotate(45deg);
+    transition: 2s ease;
+    background-color:black;
+}
+
+.Logout{
+    border-radius: 6px;
+    margin-top: 2px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.quantity
+{
+    margin: 10px auto;
+    justify-content: center;
+display: flex;
+
+width: fit-content;
+height: 30px;
+text-align: center;
+align-items: center;
+}
+
+.minus, .plus
+{
+
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin: auto;
+cursor: pointer;
+}
+
+.amount{
+    width:25px;
+    margin: 0px;
 }
 

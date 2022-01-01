@@ -48,15 +48,17 @@
     <div class="sign-up-form">
         <h1>Sign In Now</h1>
         <form>
-            <input type="email" class="input-bx" placeholder="Your Email">
-            <input type="password" class="input-bx" placeholder="Your password">
+            <input id="email" type="email" class="input-bx" placeholder="Your Email">
+            <div id="emailnotmatch" class="text-danger"></div>
+            <input id="password" type="password" class="input-bx" placeholder="Your password">
+            <div id="passnotmatch" class="text-danger"></div>
+            <button onclick="getData()" type="button" class="signup-btn btn-sign-up-box">Sign In</button>
         </form>
-        <a href="../Sign in/placeOrder.html"><button type="button" class="signup-btn btn-sign-up-box">Sign In</button></a>
         <hr>
         <p class="or">OR</p>
         <a href="https://twitter.com/" target="_blank"><button class="twitter-btn btn-sign-up-box" type="button">Login with twitter</button></a>
         <p>Don't have an account ?<a href="./signup.html">Sign up now</a></p>
     </div>
 
-
+    <script src="./signIn.js"></script>
     </body>
