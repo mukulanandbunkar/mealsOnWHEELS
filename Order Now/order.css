@@ -21,6 +21,9 @@ body{
     width: auto;
     filter: invert(100%);
 }
+.navbar{
+    background-color: black;
+}
 
 .navigation-items{
     text-decoration: none;
@@ -35,3 +38,30 @@ body{
     background-color: rgb(209, 28, 58);
 }
 
+.lineItem{
+   margin: 20px;
+   padding: 30px;
+
+}
+
+.cartNo{
+    color: white;
+    font-weight: bold;
+    
+}
+
+.right-nav
+{
+justify-content: center;
+}
+
+.shopingCart
+{
+cursor: pointer;
+color: rgb(209, 28, 58);
+}
+
+.shopingCart:hover
+{
+color: white;
+}

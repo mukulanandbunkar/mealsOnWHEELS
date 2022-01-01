@@ -99,3 +99,9 @@ hr
     margin: -19px auto 10px;
 }
 
+.SIGNBTN:hover{
+    color: white;
+   background-color: black;
+   font-weight: bolder;
+}
+

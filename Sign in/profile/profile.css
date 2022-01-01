@@ -1,0 +1,267 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-attachment: fixed;
+}
+
+
+.main-container{
+   
+    padding-bottom: 10px;
+    height: 100%;
+    
+}
+
+.logo{
+    height: 64px;
+    width: auto;
+    filter: invert(100%);
+}
+
+.navigation-items{
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(209, 28, 58);
+    margin: 20px;
+    width: fit-content;
+}
+
+.navigation-items:hover{
+    color: white;
+    background-color: rgb(209, 28, 58);
+}
+
+.sign-up-form{
+    background-color: white;
+   width: 300px;
+   box-shadow: 0 0 3px 0 rgba(0,0,0,0.3); 
+   padding: 20px;
+   margin: 0 auto 0;
+   text-align: center;
+}
+
+.sign-up-form h1 
+{
+    color:rgb(221, 40, 40);
+    margin-bottom: 30px;
+}
+
+.input-bx
+{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #999;
+    outline: none;
+}
+
+
+.btn-sign-up-box{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.signup-btn
+{
+    background-color:rgb(221, 40, 40);
+}
+
+.twitter-btn
+{
+    background-color: #21afde;
+}
+
+hr
+{
+    margin-top: 20px;
+    width: 80%;
+}
+
+.or{
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10px;
+}
+
+.SIGNBTN:hover{
+    color: white;
+   background-color: black;
+   font-weight: bolder;
+}
+
+.profile{
+    background-color: #d9534f;
+    height: 350px;
+    width: 200px;
+    position: absolute;
+    right: 0px;
+    top: 200px;
+    border-radius: 16px;
+    transition: ease 2s;
+}
+
+.profileChange{
+    height: 100px;
+    transition: 2s ease;
+}
+
+.userLogo{
+    width: 100%;
+    text-align: center;
+margin-top: 30px;
+   
+    
+}
+
+.userCreditialsChange, .userLogoChange{
+    display: none;
+}
+
+.hamburgur{
+    
+    height: fit-content;
+    width: 50px;
+    text-align: center;
+    margin: 10px auto;
+    cursor: pointer;
+    
+}
+
+.box{
+    background-color: black;
+    margin: 2px;
+    height: 10px;
+    border-radius: 15px;
+    transition: 1s ease;
+    
+}
+
+
+.box1change{
+    transform:translateY(16px) rotate(-45deg);
+    transition: 2s ease;
+    background-color:black;
+}
+
+.box3change{
+   display: none;
+   
+}
+
+.box2change{
+    transform:translateY(4px) rotate(45deg);
+    transition: 2s ease;
+    background-color:black;
+}
+
+.Logout{
+    border-radius: 6px;
+    margin-top: 2px;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.quantity
+{
+    margin: 10px auto;
+    justify-content: center;
+display: flex;
+
+width: fit-content;
+height: 30px;
+text-align: center;
+align-items: center;
+}
+
+.minus, .plus
+{
+
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin: auto;
+cursor: pointer;
+}
+
+.amount{
+    width:25px;
+    margin: 0px;
+}
+
+
+    
+
+.table{
+	width: 98%;
+	border-collapse: collapse;
+    margin-top: 14px;
+    margin-left: 6px;
+}
+
+.table td,.table th{
+  padding:12px 15px;
+  border:1px solid black;
+  text-align: center;
+  font-size:16px;
+}
+
+.table th{
+	background-color: #d9534f;
+	color:#ffffff;
+}
+
+.table tbody tr, .table tfoot tr {
+	background-color: #f5f5f5;
+}
+
+/*responsive*/
+
+@media(max-width: 500px){
+	.table thead{
+		display: none;
+        
+	}
+
+	.table, .table tbody, .table tr, .table td{
+		display: block;
+		width: 90%;
+	}
+	.table tr{
+		margin-bottom:15px;
+        width: 282px;
+	}
+	.table td{
+		text-align: right;
+		padding-left: 50%;
+		text-align: right;
+		position: relative;
+        width: 282px;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
+

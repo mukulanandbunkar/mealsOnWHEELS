@@ -48,18 +48,25 @@
     <div class="sign-up-form">
         <h1>Sign Up Now</h1>
         <form>
-            <input type="email" class="input-bx" placeholder="Your Email">
-           <input type="password" class="input-bx" placeholder="Set password">
-            <input type="password" class="input-bx" placeholder="Type password again">
-            <input type="text" class="input-bx" placeholder="Enter OTP Sent to your mail">
-            <a href="#">Get OTP</a>
+            <input id="name" type="text" class="input-bx" placeholder="Enter Your Name" required>
+            <div id="namenotmatch" class="text-danger"></div>
+            <input id="email" type="email" class="input-bx" placeholder="Your Email" required>
+            <div id="emailnotmatch" class="text-danger"></div>
+           <input id="password" type="password" class="input-bx" placeholder="Set password" required>
+           <div id="passnotmatch" class="text-danger"></div>
+            <input id="repassword" type="password" class="input-bx" placeholder="Type password again" required>
+            <div id="repassnotmatch" class="text-danger"></div>
+            <input id="OTP"  type="text" class="input-bx" placeholder="Enter OTP Sent to your mail">
+            <a id="getOtp" href="#" onclick="getOTP()">Get OTP</a>
+            <div id="otpnotmatch" class="text-danger"></div>
+            <button  type="button" onclick= "saveData()" class="signup-btn btn-sign-up-box SIGNBTN">Sign Up</button>
         </form>
-        <button type="button" class="signup-btn btn-sign-up-box">Sign Up</button>
+        
         <hr>
         <p class="or">OR</p>
         <a href="https://twitter.com/" target="_blank"><button class="twitter-btn btn-sign-up-box" type="button">Login with twitter</button></a>
         <p>Do you have an account ?<a href="./signIn.html">Sign in</a></p>
     </div>
-
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="./signUp.js"></script>
     </body>
