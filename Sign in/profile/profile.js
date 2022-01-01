@@ -5,10 +5,6 @@ console.log("mukul")
 
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 3da6342055a4331254fad3251dc38856a0bc5909
 //for logout
 function logOut() {
     localStorage.removeItem('name');
@@ -23,24 +19,15 @@ function logOut() {
 }
 
 
-<<<<<<< HEAD
 //DISPLAY THE CART ITEMS
 function displayCart() {
     let showTable = document.querySelector('#selectedItem');
     let cartItem = JSON.parse(localStorage.getItem('itemsInCart'));
    
-=======
-//DIAPLAY THE CART ITEMS
-function displayCart() {
-    let showTable = document.querySelector('#selectedItem');
-    let cartItem = JSON.parse(localStorage.getItem('itemsInCart'));
-    console.log(cartItem);
->>>>>>> 3da6342055a4331254fad3251dc38856a0bc5909
 
     if (cartItem && showTable) {
         showTable.innerHTML = '';
         Object.values(cartItem).map((element) =>
-<<<<<<< HEAD
             showTable.innerHTML += 
             `<tr>
             <td data-label="itemName">${element.itemName}</td>
@@ -48,25 +35,11 @@ function displayCart() {
             <td data-label="netTotal"><span>₹ </span>${element.price}<span>/-</span></td>  
             <td data-label="netTotal"><span>₹ </span>${element.price*element.inCart}<span>/-</span></td>       
             </tr>`
-=======
-            showTable.innerHTML += `<div class="d-flex align-items-center">
-       <div class="col text-center ">${element.itemName}</div>
-       <div class="col text-center  ">
-           <div class="quantity">
-               <div class="minus text-success"><i class="fas fa-minus-circle fa-2x"></i></div>
-               <div class="amount" style="font-size:x-large; font-weight:bolder;">${element.inCart}</div>
-               <div onclick="increaseQuantity()" class="plus text-success"><i class="fas fa-plus-circle fa-2x"></i></div>
-           </div>
-       </div>
-       <div class="col text-center "><span>₹ </span>${element.price * element.inCart}<span>/-</span></div>
-       </div>`
->>>>>>> 3da6342055a4331254fad3251dc38856a0bc5909
         )
     }
 
 
 
-<<<<<<< HEAD
     let finalHTML = showTable.innerHTML;
     console.log(finalHTML);
     return finalHTML;
@@ -89,10 +62,6 @@ function grandTotal()
 }
 
 
-=======
-}
-
->>>>>>> 3da6342055a4331254fad3251dc38856a0bc5909
 function validationNumber() {
     let mobilenumber = Number(document.getElementById('mobilenumber').value)
     let errorNum = document.querySelector('.incorrectNo');
@@ -142,10 +111,7 @@ function successfullyOrder() {
     let name = localStorage.getItem('name');
     let email = localStorage.getItem('email');
     let cartItem = localStorage.getItem('cartNumbers')
-<<<<<<< HEAD
     let grandTotal = localStorage.getItem('TotalCost');
-=======
->>>>>>> 3da6342055a4331254fad3251dc38856a0bc5909
 
     if (cartItem) 
     {
@@ -154,11 +120,7 @@ function successfullyOrder() {
             localStorage.removeItem('itemsInCart');
             localStorage.removeItem('cartNumbers');
             localStorage.removeItem('TotalCost');
-<<<<<<< HEAD
             sendEmailSuccess(name, email, address, mobilenumber, grandTotal);
-=======
-            sendEmailSuccess(name, email, address, mobilenumber);
->>>>>>> 3da6342055a4331254fad3251dc38856a0bc5909
             alert('Order placed Sucessfully!!!!')
             window.location.href = "./sucessfulOrder.html"
 
@@ -174,7 +136,6 @@ function successfullyOrder() {
 }
 
 //function to send successful order message
-<<<<<<< HEAD
 function sendEmailSuccess(Name, email, address, mobilenumber, grandTotal) {
 
 
@@ -184,12 +145,6 @@ console.log(grandTotal);
 
     Email.send({
 
-=======
-function sendEmailSuccess(Name, email, address, mobilenumber) {
-
-
-    Email.send({
->>>>>>> 3da6342055a4331254fad3251dc38856a0bc5909
         Host: "smtp.gmail.com",
         Username: "mukulanandbunkarsender@gmail.com",
         Password: "wpjwwovwoeqdthyb",
@@ -197,7 +152,6 @@ function sendEmailSuccess(Name, email, address, mobilenumber) {
         From: "mukulanandbunkarsender@gmail.com",
         Subject: `MealsOnWheels IS SENT YOU A MESSAGE`,
         Body: `Hi,<strong>${Name}</strong><br> You order is sucessfully placed on <strong>MealsOnWheels</strong><br>Email: ${email}<br>Mobile no.: ${mobilenumber} <br>Address: ${address}<br>
-<<<<<<< HEAD
         <table class="table" border="1">
                         <thead>
                             <tr>
@@ -219,19 +173,13 @@ function sendEmailSuccess(Name, email, address, mobilenumber) {
                             </tr>
                         </tfoot>
                       </table>
-=======
-        
->>>>>>> 3da6342055a4331254fad3251dc38856a0bc5909
         <br> Regards,<br><strong>MUKUL ANAND BUNKAR</strong> `
     }).then(
         message => alert("order detail sent successfully!!!!!")
     );
 }
 
-<<<<<<< HEAD
 //FUNCTION TO RESET THE CART AFTER SUCCESSFUL ORDER
-=======
->>>>>>> 3da6342055a4331254fad3251dc38856a0bc5909
 function reorder() {
     localStorage.removeItem('itemsInCart');
     localStorage.removeItem('cartNumbers');
@@ -240,14 +188,6 @@ function reorder() {
 }
 
 
-<<<<<<< HEAD
-=======
-
-
-
-
-
->>>>>>> 3da6342055a4331254fad3251dc38856a0bc5909
 function increaseQuantity()
 {  let plus = document.querySelector('.plus');
     let itemsOnCart = localStorage.getItem('itemsInCart');
@@ -264,18 +204,5 @@ function increaseQuantity()
  
 }
 
-<<<<<<< HEAD
 displayCart();
 grandTotal();
-=======
-
-
-
-
-
-
-
-
-
-displayCart();
->>>>>>> 3da6342055a4331254fad3251dc38856a0bc5909
