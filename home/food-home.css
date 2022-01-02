@@ -8,6 +8,9 @@ body{
     overflow-x: hidden;
 }
 
+
+/* CODING FOR THE NAVIGATION  */
+
 .main-container{
     background-color: black;
     padding-bottom: 10px;
@@ -33,6 +36,9 @@ body{
     color: white;
     background-color: rgb(209, 28, 58);
 }
+
+
+/* CODING FOR THE CORUSEL ITEMS */
 
 .carousel-item{
     height: 87vh;

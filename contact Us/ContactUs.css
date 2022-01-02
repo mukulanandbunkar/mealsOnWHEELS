@@ -105,3 +105,73 @@ hr
     
 }
 
+
+
+/* coding for the social networking */
+.social{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.facebook, .linkedin, .twitter{
+    margin:0px 20px;
+    color: #ff4444;
+}
+
+.facebook:hover{
+    color: 	#4267B2;
+    
+}
+
+.twitter:hover{
+    color: #1DA1F2;
+}
+
+.linkedin:hover{
+    color: #0072b1;
+}
+
+/* contact form css */
+
+.contactForm{
+    width: 100%;
+    margin: 0px auto;
+    
+}
+
+.name, .email{
+    width: 90%;
+    border-radius: 16px;
+}
+
+.message {
+    width: 95%;
+    height: 168px;
+    border-radius: 16px;
+}
+
+.submitbtn{
+    border-radius: 16px;
+    background-color:rgb(222, 53, 53) ;
+    font-weight: bolder;
+    color: white;
+   
+}
+
+.submitbtn:hover{
+  
+    background-color:white ;
+    color: rgb(222, 53, 53);
+}
+
+/* make contact form responsive */
+
+@media screen  and (max-width:800px){
+
+    .contactForm{
+        width: 80%;
+    }
+
+}
+
+

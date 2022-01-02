@@ -5,7 +5,7 @@ console.log("mukul")
 
 
 
-//for logout
+//for logout button
 function logOut() {
     localStorage.removeItem('name');
     localStorage.removeItem('email');
@@ -38,7 +38,7 @@ function displayCart() {
         )
     }
 
-
+// final html return the html coding for sending mail table format
 
     let finalHTML = showTable.innerHTML;
     console.log(finalHTML);
@@ -46,6 +46,9 @@ function displayCart() {
 
 }
 
+
+
+// function to insert grandTotal in the table
 function grandTotal()
 {
     let Cost = Number(localStorage.getItem('TotalCost'));
@@ -62,6 +65,7 @@ function grandTotal()
 }
 
 
+// function to validate the enter number
 function validationNumber() {
     let mobilenumber = Number(document.getElementById('mobilenumber').value)
     let errorNum = document.querySelector('.incorrectNo');
@@ -85,7 +89,7 @@ function validationNumber() {
             }
 }
 
-
+// function to validate the user address
 function validationAddress() {
     let address = document.getElementById('address').value;
     let errorAddress = document.querySelector('.incorrectAddress');
@@ -102,7 +106,7 @@ function validationAddress() {
 
 
 
-
+// function to place order finlly if user input all creditials correct
 function successfullyOrder() {
     let address = document.getElementById('address').value;
     let mobilenumber = Number(document.getElementById('mobilenumber').value)
@@ -135,7 +139,8 @@ function successfullyOrder() {
 
 }
 
-//function to send successful order message
+
+//function to send successful order message with bill of item
 function sendEmailSuccess(Name, email, address, mobilenumber, grandTotal) {
 
 
@@ -179,6 +184,7 @@ console.log(grandTotal);
     );
 }
 
+
 //FUNCTION TO RESET THE CART AFTER SUCCESSFUL ORDER
 function reorder() {
     localStorage.removeItem('itemsInCart');
@@ -188,21 +194,6 @@ function reorder() {
 }
 
 
-function increaseQuantity()
-{  let plus = document.querySelector('.plus');
-    let itemsOnCart = localStorage.getItem('itemsInCart');
-    let jsonCart = JSON.parse(itemsOnCart)
-  
-   
-    for (let i=0; i<=plus.length; i++)
-    {   plus.addEventListener('click', ()=>{
-        console.log('mukul')
-    })
-       
-    }
-
- 
-}
-
+// function call to display selected item list and grang total
 displayCart();
 grandTotal();

@@ -1,3 +1,5 @@
+
+/* initial setting */
 *{
     padding: 0px;
     margin: 0px;
@@ -12,7 +14,7 @@ body{
     background-attachment: fixed;
 }
 
-
+/* navigation bar css coding */
 .main-container{
    
     padding-bottom: 10px;
@@ -38,6 +40,8 @@ body{
     color: white;
     background-color: rgb(209, 28, 58);
 }
+
+/* coding for sign up and sign-in form */
 
 .sign-up-form{
     background-color: white;
@@ -103,5 +107,30 @@ hr
     color: white;
    background-color: black;
    font-weight: bolder;
+}
+
+
+/* coding for social networking button */
+.social{
+    flex-direction: row;
+    justify-content: center;
+}
+
+.facebook, .linkedin, .twitter{
+   margin: 0px 20px;
+    color: #ff4444;
+}
+
+.facebook:hover{
+    color: 	#4267B2;
+    
+}
+
+.twitter:hover{
+    color: #1DA1F2;
+}
+
+.linkedin:hover{
+    color: #0072b1;
 }
 

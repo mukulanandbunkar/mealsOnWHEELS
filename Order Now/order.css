@@ -1,3 +1,5 @@
+
+/* INITIAL SETTING */
 *{
     padding: 0px;
     margin: 0px;
@@ -8,7 +10,7 @@ body{
     overflow-x: hidden;
 }
 
-
+/* CODING FOR NAVIGATION BAR */
 .main-container{
     background-color: black;
     padding-bottom: 10px;
@@ -44,6 +46,7 @@ body{
 
 }
 
+/* CODING FOR THE CART */
 .cartNo{
     color: white;
     font-weight: bold;

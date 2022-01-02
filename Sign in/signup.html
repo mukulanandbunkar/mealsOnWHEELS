@@ -18,6 +18,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d211e94c04.js" crossorigin="anonymous"></script>
     <link href="./signIn.css" rel="stylesheet">
 </head>
 
@@ -45,6 +46,8 @@
             </div>
         </div>
     </header>
+
+    <!-- coding for the sign up form -->
     <div class="sign-up-form">
         <h1>Sign Up Now</h1>
         <form>
@@ -52,21 +55,36 @@
             <div id="namenotmatch" class="text-danger"></div>
             <input id="email" type="email" class="input-bx" placeholder="Your Email" required>
             <div id="emailnotmatch" class="text-danger"></div>
-           <input id="password" type="password" class="input-bx" placeholder="Set password" required>
-           <div id="passnotmatch" class="text-danger"></div>
+            <input id="password" type="password" class="input-bx" placeholder="Set password" required>
+            <div id="passnotmatch" class="text-danger"></div>
             <input id="repassword" type="password" class="input-bx" placeholder="Type password again" required>
             <div id="repassnotmatch" class="text-danger"></div>
-            <input id="OTP"  type="text" class="input-bx" placeholder="Enter OTP Sent to your mail">
+            <input id="OTP" type="text" class="input-bx" placeholder="Enter OTP Sent to your mail">
             <a id="getOtp" href="#" onclick="getOTP()">Get OTP</a>
             <div id="otpnotmatch" class="text-danger"></div>
-            <button  type="button" onclick= "saveData()" class="signup-btn btn-sign-up-box SIGNBTN">Sign Up</button>
+            <button type="button" onclick="saveData()" class="signup-btn btn-sign-up-box SIGNBTN">Sign Up</button>
         </form>
-        
-        <hr>
-        <p class="or">OR</p>
-        <a href="https://twitter.com/" target="_blank"><button class="twitter-btn btn-sign-up-box" type="button">Login with twitter</button></a>
+
+        <br>
+        <p class="or fw-bolder">OR</p>
+        <div class="social d-flex mb-5">
+            <a href="https://m.facebook.com/">
+                <div class="facebook "><i class="fab fa-facebook fa-2x"></i></div>
+            </a>
+            <a href="https://twitter.com/">
+                <div class="twitter "><i class="fab fa-twitter fa-2x"></i></div>
+            </a>
+            <a href="https://www.linkedin.com/">
+                <div class="linkedin "><i class="fab fa-linkedin fa-2x"></i></div>
+            </a>
+        </div>
+
+        <p class="or fw-bolder">OR</p>
         <p>Do you have an account ?<a href="./signIn.html">Sign in</a></p>
     </div>
+    <!-- script files -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="./signUp.js"></script>
-    </body>
+    <script src="./signUp.js"></script>
+</body>
+
+</html>

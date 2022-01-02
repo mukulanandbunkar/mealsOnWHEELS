@@ -122,7 +122,7 @@ function onLoadCartNo() {
 
 
 
-
+// FUNCTION TO UPDATE THE CART NUMBER
 
 function cartNumbers(items) {
     let productNumber = localStorage.getItem('cartNumbers');
@@ -138,6 +138,8 @@ function cartNumbers(items) {
 
     insertItem(items)
 }
+
+// FUNCTION TO INSERT ITEMS
 
 function insertItem(items) 
 {
@@ -169,6 +171,9 @@ function insertItem(items)
     localStorage.setItem("itemsInCart", JSON.stringify (cartItems));
     
 }
+
+
+// FUNCTION TO CALCULATE TOTAL COST AND STORE IT IN LOCAL STORAGE
 
 
 function totalCost(items)
@@ -208,7 +213,7 @@ function checkLogin()
 
 
 
-
+// Function CALL TO UPDATE CART NO PERMANENTLY
 onLoadCartNo();
 
  
