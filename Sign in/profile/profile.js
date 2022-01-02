@@ -1,6 +1,62 @@
 console.log("mukul")
 
 
+// FUNCTION TO CHECK IF USER ICON
+function userCheck() {
+    let email = localStorage.getItem('email')
+    let name = localStorage.getItem('name')
+    document.querySelector('.user').innerHTML = `<i class="fas fa-user-check fa-2x"></i>`;
+}
+userCheck();
+
+// FUNCTION TO TOGGLE COLLAPSE BAR AND ITS LOGIN/LOGOUT BUTTON
+
+function collapseUserDetail() {
+    let email = localStorage.getItem('email')
+    let name = localStorage.getItem('name')
+    document.querySelector('.userDetail').classList.toggle('userDetailChange');
+    document.querySelector('.userName').innerText = name;
+    document.querySelector('.userEmail').innerText = email;
+    document.querySelector('.userBtn').innerText = "Log Out";
+}
+
+
+// logic for user button
+document.querySelector('.USERBUTTON').addEventListener('click', () => {
+    let email = localStorage.getItem('email')
+    let name = localStorage.getItem('name')
+    console.log('mukul')
+
+    localStorage.removeItem('name');
+    localStorage.removeItem('email');
+    localStorage.removeItem('itemsInCart');
+    localStorage.removeItem('cartNumbers');
+    localStorage.removeItem('TotalCost');
+    alert('logging out');
+    window.location.href = "../signIn.html";
+})
+
+// FUNCTION TO SHOW NUMBER OF ITEMS LOADED ON CART
+function onLoadCartNo() {
+    let productNumber = localStorage.getItem('cartNumbers');
+    if (productNumber) {
+
+        document.querySelector('.cartNo').textContent = productNumber;
+    }
+
+}
+onLoadCartNo();
+
+
+//function to check if user is alredy login or not
+function checkLogin() {
+
+    window.location.reload();
+
+}
+
+
+
 
 
 
@@ -23,22 +79,22 @@ function logOut() {
 function displayCart() {
     let showTable = document.querySelector('#selectedItem');
     let cartItem = JSON.parse(localStorage.getItem('itemsInCart'));
-   
+
 
     if (cartItem && showTable) {
         showTable.innerHTML = '';
         Object.values(cartItem).map((element) =>
-            showTable.innerHTML += 
+            showTable.innerHTML +=
             `<tr>
             <td data-label="itemName">${element.itemName}</td>
             <td data-label="quantity">${element.inCart}</td>
             <td data-label="netTotal"><span>₹ </span>${element.price}<span>/-</span></td>  
-            <td data-label="netTotal"><span>₹ </span>${element.price*element.inCart}<span>/-</span></td>       
+            <td data-label="netTotal"><span>₹ </span>${element.price * element.inCart}<span>/-</span></td>       
             </tr>`
         )
     }
 
-// final html return the html coding for sending mail table format
+    // final html return the html coding for sending mail table format
 
     let finalHTML = showTable.innerHTML;
     console.log(finalHTML);
@@ -49,19 +105,17 @@ function displayCart() {
 
 
 // function to insert grandTotal in the table
-function grandTotal()
-{
+function grandTotal() {
     let Cost = Number(localStorage.getItem('TotalCost'));
     let Total = document.querySelector('#totalCost');
     console.log(totalCost)
-    if(Cost != 0){
-    Total.innerText = Cost;
+    if (Cost != 0) {
+        Total.innerText = Cost;
     }
-    else
-    {
+    else {
         Total.innerText = '000';
     }
-   
+
 }
 
 
@@ -117,8 +171,7 @@ function successfullyOrder() {
     let cartItem = localStorage.getItem('cartNumbers')
     let grandTotal = localStorage.getItem('TotalCost');
 
-    if (cartItem) 
-    {
+    if (cartItem) {
 
         if (checkAddress && checkNum) {
             localStorage.removeItem('itemsInCart');
@@ -130,8 +183,7 @@ function successfullyOrder() {
 
         }
     }
-    else 
-    {
+    else {
         alert('your cart is empty!!!')
 
     }
@@ -144,8 +196,8 @@ function successfullyOrder() {
 function sendEmailSuccess(Name, email, address, mobilenumber, grandTotal) {
 
 
-let finalHtml = displayCart();
-console.log(grandTotal);
+    let finalHtml = displayCart();
+    console.log(grandTotal);
 
 
     Email.send({

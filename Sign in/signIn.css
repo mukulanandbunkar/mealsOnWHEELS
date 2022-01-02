@@ -14,9 +14,10 @@ body{
     background-attachment: fixed;
 }
 
-/* navigation bar css coding */
+/* CODING FOR THE NAVIGATION  */
+
 .main-container{
-   
+    
     padding-bottom: 10px;
     height: 100%;
     
@@ -32,14 +33,67 @@ body{
     text-decoration: none;
     font-weight: bolder;
     color: rgb(209, 28, 58);
-    margin: 20px;
+    margin: 20px auto;
     width: fit-content;
 }
 
 .navigation-items:hover{
+    text-decoration: none;
     color: white;
     background-color: rgb(209, 28, 58);
+    border-radius: 9px;
 }
+
+.lineItem{
+   margin: 20px;
+   padding: 30px;
+
+}
+
+/* CODING FOR THE CART */
+.userDetail
+{
+   width: 294px;
+  
+   background-color: white;
+   position:fixed;
+   right: 15px;
+   z-index: 2;
+   top: 64px;
+   border-radius: 16px;
+   border: 1px solid black;
+   display: none;
+}
+
+.userDetailChange{
+   display: block;
+}
+
+
+.user{
+    position: fixed;
+    top: 18px;
+    right: 20px;
+    color:rgb(209, 28, 58) ;
+    cursor: pointer;
+}
+
+.user:hover{
+    color: white;
+}
+
+
+.myCart
+{  color:rgb(209, 28, 58) ;
+    cursor: pointer;
+}
+
+.myCart:hover
+{
+  color: white;
+}
+
+
 
 /* coding for sign up and sign-in form */
 
@@ -48,8 +102,9 @@ body{
    width: 300px;
    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3); 
    padding: 20px;
-   margin: 0 auto 0;
+   margin: 20px auto 0;
    text-align: center;
+   border-radius: 16px;
 }
 
 .sign-up-form h1 
@@ -86,10 +141,7 @@ body{
     background-color:rgb(221, 40, 40);
 }
 
-.twitter-btn
-{
-    background-color: #21afde;
-}
+
 
 hr
 {

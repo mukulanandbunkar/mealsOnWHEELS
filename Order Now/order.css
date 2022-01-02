@@ -8,9 +8,12 @@
 
 body{
     overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
 }
 
-/* CODING FOR NAVIGATION BAR */
+/* CODING FOR THE NAVIGATION  */
+
 .main-container{
     background-color: black;
     padding-bottom: 10px;
@@ -23,21 +26,20 @@ body{
     width: auto;
     filter: invert(100%);
 }
-.navbar{
-    background-color: black;
-}
 
 .navigation-items{
     text-decoration: none;
     font-weight: bolder;
     color: rgb(209, 28, 58);
-    margin: 20px;
+    margin: 20px auto;
     width: fit-content;
 }
 
 .navigation-items:hover{
+    text-decoration: none;
     color: white;
     background-color: rgb(209, 28, 58);
+    border-radius: 9px;
 }
 
 .lineItem{
@@ -47,24 +49,44 @@ body{
 }
 
 /* CODING FOR THE CART */
-.cartNo{
+.userDetail
+{
+   width: 294px;
+  
+   background-color: white;
+   position:fixed;
+   right: 15px;
+   z-index: 2;
+   top: 64px;
+   border-radius: 16px;
+   border: 1px solid black;
+   display: none;
+}
+
+.userDetailChange{
+   display: block;
+}
+
+
+.user{
+    position: fixed;
+    top: 18px;
+    right: 20px;
+    color:rgb(209, 28, 58) ;
+    cursor: pointer;
+}
+
+.user:hover{
     color: white;
-    font-weight: bold;
-    
 }
 
-.right-nav
-{
-justify-content: center;
+
+.myCart
+{  color:rgb(209, 28, 58) ;
+    cursor: pointer;
 }
 
-.shopingCart
+.myCart:hover
 {
-cursor: pointer;
-color: rgb(209, 28, 58);
-}
-
-.shopingCart:hover
-{
-color: white;
+  color: white;
 }

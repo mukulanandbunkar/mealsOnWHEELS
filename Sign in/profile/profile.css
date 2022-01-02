@@ -15,9 +15,10 @@ body{
 }
 
 
-/* css coding for navigation items */
+/* CODING FOR THE NAVIGATION  */
+
 .main-container{
-   
+    background-color: black;
     padding-bottom: 10px;
     height: 100%;
     
@@ -33,14 +34,68 @@ body{
     text-decoration: none;
     font-weight: bolder;
     color: rgb(209, 28, 58);
-    margin: 20px;
+    margin: 20px auto;
     width: fit-content;
 }
 
 .navigation-items:hover{
+    text-decoration: none;
     color: white;
     background-color: rgb(209, 28, 58);
+    border-radius: 9px;
 }
+
+.lineItem{
+   margin: 20px;
+   padding: 30px;
+
+}
+
+/* CODING FOR THE CART */
+.userDetail
+{
+   width: 294px;
+  
+   background-color: white;
+   position:fixed;
+   right: 15px;
+   z-index: 2;
+   top: 64px;
+   border-radius: 16px;
+   border: 1px solid black;
+   display: none;
+}
+
+.userDetailChange{
+   display: block;
+}
+
+
+.user{
+    position: fixed;
+    top: 18px;
+    right: 20px;
+    color:rgb(209, 28, 58) ;
+    cursor: pointer;
+}
+
+.user:hover{
+    color: white;
+}
+
+
+.myCart
+{  color:rgb(209, 28, 58) ;
+    cursor: pointer;
+}
+
+.myCart:hover
+{
+  color: white;
+}
+
+
+
 
 
 

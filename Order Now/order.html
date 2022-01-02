@@ -26,33 +26,41 @@
 <body>
     <header class="container-fluid main-container">
         <!--coding for the navigation bar-->
-        <div class="row align-items-center sticky-top navbar">
+        <div class="row align-items-center sticky-top pb-3" style="background-color: black; ">
             <div class="col-lg-2 left-nav text-center">
                 <img src="./assets/logo.jfif" alt="" class="logo">
             </div>
-            <div class="col-lg-6 center-nav">
+            <div class="col-lg-5 center-nav">
                 <div class="row align-items-center justify-content-center">
-                    <a href="../home/food-home.html" class="col-md navigation-items text-center">Home</a>
+                    <a href="../home/food-home.html" class="col-md navigation-items text-center ">Home</a>
                     <a href="../Order Now/order.html" class="col-md navigation-items text-center text-white">Order Now</a>
                     <a href="../Sign in/signIn.html" class="col-md navigation-items text-center">Sign In</a>
                     <a href="../contact Us/ContactUs.html" class="col-md navigation-items text-center">Contact Us</a>
                 </div>
             </div>
-            <div class="col-lg-4 right-nav d-flex">
-                
+            <div class="col-lg-5  right-nav d-flex justify-content-center">
+                <div onclick="checkLogin()" class="cart mr-3  fw-bold myCart"><i class="fas fa-cart-plus fa-2x"></i><span class="cartNo text-white">0</span></div>   
                 <form class="d-flex justify-content-center">
-                    <input class="form me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-danger " type="submit">Search</button>
+                    
+                    <input class="form me-2" type="search" placeholder="Search" style="border-radius: 16px;width: 150px; " aria-label="Search">
+                    <button class="btn btn-danger " type="submit" style="border-radius: 50%;"><i class="fas fa-search"></i></button>
+                    
                 </form>
-                <div class="shopingCart" onclick="checkLogin()">
-                    <div class="text-end text-white  cartNo">0</div>
-                    <i class="fas fa-shopping-cart fa-2x ml-2  "></i>
-                </div>
-                <div>
+                <div onclick="collapseUserDetail()" class="user ml-3  "><i class="far fa-user fa-2x"></i></div>
+            </div>
+                <!-- USER DETAILS TOGGLE BAR   -->
+                <ul class=" userDetail list-group s text-center">
+                    <li class="userName list-group-item">
+                        
+                    </li>
+                    <li class="userEmail list-group-item">
+                        
+                    </li>
+                    <li  class="list-group-item USERBUTTON"><button type="button"
+                            class="btn btn-danger "><i class="fas fa-sign-out-alt userBtn "></i> </button></li>
+                </ul>
 
-                </div>
-                </div>
-                
+            
         </div>
         <!--Trending items-->
         <div id="carouselExampleCaptions" class="carousel slide mt-4" data-bs-ride="carousel">
