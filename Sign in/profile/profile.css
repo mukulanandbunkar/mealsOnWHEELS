@@ -136,18 +136,19 @@ body{
 
 	.table, .table tbody, .table tr, .table td{
 		display: block;
-		width: 90%;
+		width: 100%;
+        padding-right: 6px;
 	}
 	.table tr{
 		margin-bottom:15px;
-        width: 282px;
+        width: 100%;
 	}
 	.table td{
 		text-align: right;
 		padding-left: 50%;
 		text-align: right;
 		position: relative;
-        width: 282px;
+        width: 102%;
 	}
 	.table td::before{
 		content: attr(data-label);
@@ -159,5 +160,7 @@ body{
 		font-weight: bold;
 		text-align: left;
 	}
+
+    
 }
 
