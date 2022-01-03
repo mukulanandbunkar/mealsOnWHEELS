@@ -66,67 +66,68 @@
 
 
         </div>
-    </div>
-    <!-- html coding for the login user information -->
-    <div class="container-fluid ">
-        <div class="row mt-3 mx-2">
-            <div class="col-md-4">
-                <div class="row mt-3 mx-2">
 
-                    <div class="card">
-                        <div class="card-header text-center fw-bolder text-danger ">
-                            USER INFO <i class="far fa-user fa-2x"></i>
+        <!-- html coding for the login user information -->
+        <div class="container-fluid ">
+            <div class="row mt-3 mx-2">
+                <div class="col-md-4">
+                    <div class="row mt-3 mx-2">
+
+                        <div class="card">
+                            <div class="card-header text-center fw-bolder text-danger ">
+                                USER INFO <i class="far fa-user fa-2x"></i>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <script>document.write(localStorage.getItem('name'));</script>
+                                </li>
+                                <li class="list-group-item">
+                                    <script>document.write(localStorage.getItem('email'));</script>
+                                </li>
+                                <li class="list-group-item"><button onclick="logOut()" type="button"
+                                        class="btn btn-danger"><i class="fas fa-sign-out-alt"></i> Log Out</button></li>
+                            </ul>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <script>document.write(localStorage.getItem('name'));</script>
-                            </li>
-                            <li class="list-group-item">
-                                <script>document.write(localStorage.getItem('email'));</script>
-                            </li>
-                            <li class="list-group-item"><button onclick="logOut()" type="button"
-                                    class="btn btn-danger"><i class="fas fa-sign-out-alt"></i> Log Out</button></li>
-                        </ul>
+
                     </div>
 
+                    <!-- html coding for the address and mobile number input -->
+                    <div class="row bg-white mt-3 mx-2">
+                        <div class="mb-3">
+                            <label for="address" class="form-label text-center fw-bolder text-danger"><i
+                                    class="fas fa-home"></i> Enter your Address</label>
+                            <textarea type="text" class="form-control" id="address"
+                                placeholder="Enter your Address"></textarea>
+                            <div class="incorrectAddress text-danger"></div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mobilenumber" class="form-label text-center fw-bolder text-danger"><i
+                                    class="fas fa-mobile-alt"></i> Enter Mobile no.</label>
+                            <div class="d-flex fw-bolder "> +91-<input id="mobilenumber" type="text"
+                                    class="form-control" placeholder="Enter your Phone Number"></div>
+                            <div class="incorrectNo text-danger"></div>
+                        </div>
+
+
+                    </div>
                 </div>
+                <!-- html coding for the successful card-->
+                <div class="col-md-8">
+                    <div class="alert alert-success" role="alert" style="margin: 14px 8px;">
+                        <h4 class="alert-heading">Order Placed successfully!</h4>
+                        <p>Aww yeah, you successfully placed your order, message is send to email. Just check it out!!!!
+                        </p>
 
-                <!-- html coding for the address and mobile number input -->
-                <div class="row bg-white mt-3 mx-2">
-                    <div class="mb-3">
-                        <label for="address" class="form-label text-center fw-bolder text-danger"><i
-                                class="fas fa-home"></i> Enter your Address</label>
-                        <textarea type="text" class="form-control" id="address"
-                            placeholder="Enter your Address"></textarea>
-                        <div class="incorrectAddress text-danger"></div>
+                        <a onclick="reorder()" href="../../Order Now/order.html">Wanna order more...</a>
                     </div>
-                    <div class="mb-3">
-                        <label for="mobilenumber" class="form-label text-center fw-bolder text-danger"><i
-                                class="fas fa-mobile-alt"></i> Enter Mobile no.</label>
-                        <div class="d-flex fw-bolder "> +91-<input id="mobilenumber" type="text" class="form-control"
-                                placeholder="Enter your Phone Number"></div>
-                        <div class="incorrectNo text-danger"></div>
-                    </div>
-
-
-                </div>
-            </div>
-            <!-- html coding for the successful card-->
-            <div class="col-md-8">
-                <div class="alert alert-success" role="alert" style="margin: 14px 8px;">
-                    <h4 class="alert-heading">Order Placed successfully!</h4>
-                    <p>Aww yeah, you successfully placed your order, message is send to email. Just check it out!!!!</p>
-
-                    <a onclick="reorder()" href="../../Order Now/order.html">Wanna order more...</a>
                 </div>
             </div>
+
         </div>
 
-    </div>
-
 
     </div>
-    </div>
+
 
     <!-- java scrit files -->
 
