@@ -140,7 +140,7 @@ function validationNumber() {
             else {
                 errorNum.innerText = '';
                 return true;
-            }
+             }
 }
 
 // function to validate the user address

@@ -278,5 +278,3 @@ function checkLogin()
 
 // Function CALL TO UPDATE CART NO PERMANENTLY
 onLoadCartNo();
-
- 
